@@ -28,6 +28,9 @@ a {
   cursor: pointer;
 }
 
+.carousel {
+  max-height: 20rem;
+}
 .carousel__dot {
   width: 1rem;
   height: 1rem;

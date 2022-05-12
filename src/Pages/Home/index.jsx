@@ -1,10 +1,24 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { banner } from "../../Assets/images";
+import { banner, girl1, girl2 } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
-import { footer } from "../../Assets/images";
 import Footer from "../../Components/Footer";
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 
+const Carousel1 = () => {
+  return (
+    <div className={styles.carousel_box}>
+      <img src={girl1} alt="girl1" />
+    </div>
+  );
+};
+const Carousel2 = () => {
+  return (
+    <div className={styles.carousel_box}>
+      <img src={girl2} alt="girl2" />
+    </div>
+  );
+};
 export default function Home() {
   return (
     <div className={styles.home}>
@@ -106,6 +120,95 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className={styles.carousel}>
+        <div className={styles.carousel_wrapper}>
+          {/* Mobile */}
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={100}
+            totalSlides={4}
+            visibleSlides={2}
+            orientation="horizontal"
+            autoPlay={true}
+            isPlaying={true}
+            interval={1500}
+            className={styles.mobile}
+          >
+            <Slider>
+              <Slide index={0}>
+                <Carousel1 />
+              </Slide>
+              <Slide index={1}>
+                {" "}
+                <Carousel2 />
+              </Slide>
+              <Slide index={2}>
+                {" "}
+                <Carousel1 />
+              </Slide>
+              <Slide index={3}>
+                {" "}
+                <Carousel2 />
+              </Slide>
+            </Slider>
+          </CarouselProvider>
+          {/* Desktop */}
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={100}
+            totalSlides={12}
+            visibleSlides={4}
+            orientation="horizontal"
+            autoPlay={true}
+            isPlaying={true}
+            interval={1500}
+            className={styles.desktop}
+            playDirection="forward"
+          >
+            <Slider>
+              {[...Array(12).keys()].map((item, index) => {
+                return index % 2 === 0 ? (
+                  <Slide index={index} key={item}>
+                    <Carousel1 />
+                  </Slide>
+                ) : (
+                  <Slide index={index} key={item}>
+                    <Carousel2 />
+                  </Slide>
+                );
+              })}
+            </Slider>
+          </CarouselProvider>
+          <CarouselProvider
+            naturalSlideWidth={100}
+            naturalSlideHeight={100}
+            totalSlides={12}
+            visibleSlides={4}
+            orientation="horizontal"
+            autoPlay={true}
+            isPlaying={true}
+            interval={1500}
+            className={styles.desktop}
+            playDirection="backward"
+          >
+            <Slider>
+              {[...Array(12).keys()].map((item, index) => {
+                return index % 2 === 0 ? (
+                  <Slide index={index} key={item}>
+                    <Carousel1 />
+                  </Slide>
+                ) : (
+                  <Slide index={index} key={item}>
+                    <Carousel2 />
+                  </Slide>
+                );
+              })}
+            </Slider>
+          </CarouselProvider>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
