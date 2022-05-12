@@ -1,12 +1,15 @@
 import { Home, Mint } from "./Pages";
-// import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Home />
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mint" element={<Mint />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
