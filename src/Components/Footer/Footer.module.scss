@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   .footer_wrap {
     .footer_img_wrap {
       img {
@@ -64,6 +65,12 @@
 @media screen and (min-width: 768px) {
   .footer {
     .footer_wrap {
+      .footer_img_wrap {
+        img {
+          max-height: 4rem;
+          object-fit: cover;
+        }
+      }
       .footer_content_wrap {
         .content_links {
           width: 100%;
