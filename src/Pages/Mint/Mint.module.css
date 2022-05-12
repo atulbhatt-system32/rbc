@@ -1,33 +1,45 @@
 .mint_page {
+  padding: 3.5rem 1rem;
   background-color: #fbe2e2;
   min-height: 100vh;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
 
 .title_wrapper {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 .mint_page_title {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Lora";
+  letter-spacing: 6%;
+  text-align: center;
+  line-height: 48.64px;
 }
-
+.subtitle_wrapper {
+  padding-bottom: 3.5rem;
+}
 .mint_page_subtitle {
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
-  color: #00000080;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: normal;
 }
 
 /* Wallet Card */
 
 .wallet_card_wrapper {
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   width: 100%;
+  padding-bottom: 5.5rem;
 }
 .wallet_card {
   border: 0.5rem solid #a385c5;
@@ -47,20 +59,32 @@
 
 .horizontal_rule_wrapper {
   color: #000000b2;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.label_value_holder .label,
-.value_divisor {
+.label_value_holder .label {
   font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  font-family: "Lato";
+  text-align: left;
+}
+.label_value_holder .value_divisor {
+  color: #000;
 }
 
 .label_value_holder .value {
   color: #000000b2;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  font-family: "Lato";
 }
 
 .connect_wallet_btn_wrapper {
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
 }
 
@@ -72,7 +96,7 @@
   padding: 1rem 0;
   font-family: "Lora", serif;
   font-size: 1rem;
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
 }
 
 .social_media_wrapper {
@@ -84,6 +108,48 @@
 
 @media screen and (min-width: 768px) {
   .mint_page {
-    padding: 0 18%;
+    padding: 50px 294px 50px 294px;
+  }
+
+  /* .title_wrapper {
+    padding-bottom: 0.5rem;
+  } */
+  .mint_page_title {
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Lora";
+    letter-spacing: 6%;
+    text-align: center;
+    line-height: 87px;
+    font-style: normal;
+    color: #000;
+  }
+  .subtitle_wrapper {
+    padding-bottom: 3.5rem;
+  }
+  .mint_page_subtitle {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+  }
+  .wallet_card_wrapper {
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+  .wallet_card {
+    border: 0.5rem solid #a385c5;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: #fff;
+  }
+  .social_media_wrapper {
+    padding-top: 1rem;
   }
 }
