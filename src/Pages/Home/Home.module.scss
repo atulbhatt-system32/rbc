@@ -1,6 +1,124 @@
 .home {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  .landing_section {
+    width: 100%;
+    .banner {
+      width: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        min-height: 45vh;
+        max-width: 100%;
+      }
+    }
+  }
+  .content {
+    padding: 1.5rem;
+    .intro_wrapper {
+      color: #333333;
+      font-family: Lato;
+      padding: 0.5rem;
+
+      .intro_text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+      .intro_text p + p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  section.roadmap {
+    display: flex;
+    text-align: left;
+    background: #fbe2e2;
+    padding: 4rem 1.5rem;
+    width: 100%;
+    .roadmap_header {
+      margin-bottom: 1rem;
+      .roadmap_title {
+        font-family: Lora;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 49px;
+        letter-spacing: 0em;
+      }
+      .roadmap_subtitle {
+        color: #000000;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        max-width: 60%;
+      }
+    }
+    .roadmap_content {
+      .content_box + .content_box {
+        margin-top: 1.5rem;
+      }
+      .content_box {
+        font-family: Inter;
+        font-size: 14px;
+        line-height: 17px;
+        color: #333333;
+        padding-left: 1rem;
+
+        .content_box_title {
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        .content_box_text {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  section.mission {
+    text-align: center;
+    .mission_wrapper {
+      .mission_header {
+        border-bottom: 1px solid #00000033;
+        padding: 4rem 1.5rem;
+        .mission_title {
+          font-family: Lora;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 49px;
+          margin-bottom: 1rem;
+        }
+        .mission_subtitle {
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 23px;
+          color: #333333;
+        }
+      }
+
+      .mission_people {
+        border-bottom: 1px solid #00000033;
+        padding: 4rem 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    .landing_section {
+      .banner {
+        img {
+          min-height: unset;
+        }
+      }
+    }
+  }
 }
