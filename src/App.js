@@ -1,4 +1,4 @@
-import {} from "./Components";
+import { Footer } from "./Components";
 import { Home, Mint } from "./Pages";
 // import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <Home />
       </header>
+      <Footer />
     </div>
   );
 }

@@ -6,5 +6,46 @@
         width: 100%;
       }
     }
+    .footer_content_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .content_head {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 56.32px;
+        color: #000;
+        font-family: "Lora";
+        text-align: center;
+      }
+      .content_btns {
+        button {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16.8px;
+          color: #000;
+          font-family: "Lato";
+          padding: 15px 42px;
+          background-color: #f2c2c2;
+          border: none;
+          border-radius: 100px;
+        }
+      }
+      .content_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        a {
+          text-decoration: underline;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16.8px;
+          color: #333;
+          font-family: "Lato";
+          font-style: normal;
+        }
+      }
+    }
   }
 }

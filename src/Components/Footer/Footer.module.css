@@ -1,4 +1,43 @@
 .footer .footer_wrap .footer_img_wrap img {
   height: 100%;
   width: 100%;
+}
+.footer .footer_wrap .footer_content_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer_wrap .footer_content_wrap .content_head {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 56.32px;
+  color: #000;
+  font-family: "Lora";
+  text-align: center;
+}
+.footer .footer_wrap .footer_content_wrap .content_btns button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000;
+  font-family: "Lato";
+  padding: 15px 42px;
+  background-color: #f2c2c2;
+  border: none;
+  border-radius: 100px;
+}
+.footer .footer_wrap .footer_content_wrap .content_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.footer .footer_wrap .footer_content_wrap .content_links a {
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #333;
+  font-family: "Lato";
+  font-style: normal;
 }/*# sourceMappingURL=Footer.module.css.map */
