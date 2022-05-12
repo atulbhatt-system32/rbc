@@ -68,6 +68,7 @@
   line-height: 19px;
   font-style: normal;
   font-family: "Lato";
+  text-align: left;
 }
 .label_value_holder .value_divisor {
   color: #000;
@@ -107,6 +108,48 @@
 
 @media screen and (min-width: 768px) {
   .mint_page {
-    padding: 0 18%;
+    padding: 50px 294px 50px 294px;
+  }
+
+  /* .title_wrapper {
+    padding-bottom: 0.5rem;
+  } */
+  .mint_page_title {
+    font-size: 68px;
+    font-weight: 700;
+    font-family: "Lora";
+    letter-spacing: 6%;
+    text-align: center;
+    line-height: 87px;
+    font-style: normal;
+    color: #000;
+  }
+  .subtitle_wrapper {
+    padding-bottom: 3.5rem;
+  }
+  .mint_page_subtitle {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: normal;
+  }
+  .wallet_card_wrapper {
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+  .wallet_card {
+    border: 0.5rem solid #a385c5;
+    padding: 3rem 1rem;
+    width: 100%;
+    background-color: #fff;
+  }
+  .social_media_wrapper {
+    padding-top: 1rem;
   }
 }
