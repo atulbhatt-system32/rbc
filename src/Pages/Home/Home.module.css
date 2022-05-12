@@ -1,13 +1,184 @@
 .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  width: 100%;
 }
-/*# sourceMappingURL=Home.module.css.map */
+.home .landing_section {
+  width: 100%;
+}
+.home .landing_section .banner {
+  width: 100%;
+}
+.home .landing_section .banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  min-height: 45vh;
+  max-width: 100%;
+}
+.home .content {
+  padding: 1.5rem;
+}
+.home .content .intro_wrapper {
+  color: #333333;
+  font-family: Lato;
+  padding: 0.5rem;
+}
+.home .content .intro_wrapper .intro_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.home .content .intro_wrapper .intro_text p + p {
+  margin-top: 1rem;
+}
+.home section.roadmap {
+  display: flex;
+  text-align: left;
+  background: #fbe2e2;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+.home section.roadmap .roadmap_header {
+  margin-bottom: 1rem;
+}
+.home section.roadmap .roadmap_header .roadmap_title {
+  font-family: Lora;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 49px;
+  letter-spacing: 0em;
+}
+.home section.roadmap .roadmap_header .roadmap_subtitle {
+  color: #000000;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  max-width: 60%;
+}
+.home section.roadmap .roadmap_content {
+  width: 100%;
+}
+.home section.roadmap .roadmap_content .content_box + .content_box {
+  margin-top: 1.5rem;
+}
+.home section.roadmap .roadmap_content .content_box {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  padding-left: 1rem;
+  width: 100%;
+}
+.home section.roadmap .roadmap_content .content_box .content_box_title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.home section.roadmap .roadmap_content .content_box .content_box_text {
+  font-weight: 400;
+}
+.home section.mission {
+  text-align: center;
+  width: 100%;
+}
+.home section.mission .mission_wrapper {
+  width: 100%;
+}
+.home section.mission .mission_wrapper .mission_header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4rem 1.5rem;
+}
+.home section.mission .mission_wrapper .mission_header .mission_title {
+  font-family: Lora;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 49px;
+  margin-bottom: 1rem;
+}
+.home section.mission .mission_wrapper .mission_header .mission_subtitle {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #333333;
+}
+.home section.mission .mission_wrapper .mission_people {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+.home section.mission .mission_wrapper .mission_people .people_box + .people_box {
+  margin-top: 3rem;
+}
+.home section.mission .mission_wrapper .mission_people .people_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_details div + div {
+  margin-top: 0.5rem;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_details {
+  color: #333333;
+  font-family: Lato;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_role {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: 400;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_name {
+  font-size: 22px;
+  font-weight: 700;
+}
+.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_desc {
+  padding: 0 0.5rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .home .landing_section .banner img {
+    min-height: unset;
+  }
+  .home .content,
+.home section.roadmap {
+    padding: 5% 15%;
+  }
+  .home .content .intro_wrapper .intro_text {
+    font-size: 1rem;
+  }
+  .home section.roadmap .roadmap_wrapper {
+    width: 60%;
+  }
+  .home section.roadmap .roadmap_wrapper .roadmap_content .content_box {
+    padding-left: 0;
+  }
+  .home section.mission .mission_wrapper .mission_header {
+    padding: 5% 15%;
+  }
+  .home section.mission .mission_wrapper .mission_people {
+    padding: 5% 15%;
+  }
+  .home section.mission .mission_wrapper .mission_people .people_box .people_img img {
+    width: 10rem;
+    height: 10rem;
+  }
+}/*# sourceMappingURL=Home.module.css.map */
