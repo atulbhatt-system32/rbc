@@ -1,2 +1,3 @@
 import roadmap from "./Roadmap";
-export { roadmap };
+import role_people from "./RolePeople";
+export { roadmap, role_people };

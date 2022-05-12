@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { banner } from "../../Assets/images";
-import { roadmap } from "../../Assets/js";
+import { banner, owner } from "../../Assets/images";
+import { roadmap, role_people } from "../../Assets/js";
 
 export default function Home() {
   return (
@@ -83,22 +83,24 @@ export default function Home() {
           </div>
 
           <div className={styles.mission_people}>
-            <div className={styles.people_box}>
-              <div className={styles.people_img}>
-                <img src={banner} alt="banner" />
-              </div>
-              <div className={styles.people_details}>
-                <div className={styles.people_role}></div>
-                <div className={styles.people_name}>
-                  <span>John Doe</span>
+            {role_people.map((item) => {
+              return (
+                <div className={styles.people_box}>
+                  <div className={styles.people_img}>
+                    <img src={item.profile} alt="owner" />
+                  </div>
+                  <div className={styles.people_details} key={item.id}>
+                    <div className={styles.people_role}>{item.role}</div>
+                    <div className={styles.people_name}>
+                      <span>{item.name}</span>
+                    </div>
+                    <div className={styles.people_desc}>
+                      <span>{item.desc}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.people_desc}>
-                  <span>
-                    Lorem Ipsum is simply dummy text of the printing and
-                  </span>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>
