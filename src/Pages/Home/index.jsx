@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { banner, owner } from "../../Assets/images";
+import { banner } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
 
 export default function Home() {
