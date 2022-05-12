@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Home.module.scss";
 import { banner } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
+import { footer } from "../../Assets/images";
+import Footer from "../../Components/Footer";
 
 export default function Home() {
   return (
@@ -104,6 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
