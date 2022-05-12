@@ -40,4 +40,8 @@
   color: #333;
   font-family: "Lato", sans-serif;
   font-style: normal;
+}
+.footer .footer_wrap .footer_content_wrap .content_social {
+  display: flex;
+  gap: 18px;
 }/*# sourceMappingURL=Footer.module.css.map */

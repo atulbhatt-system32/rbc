@@ -1,5 +1,5 @@
 import React from "react";
-import { footer } from "../../Assets/images/index";
+import { footer, twitter, discord, medium } from "../../Assets/images/index";
 import styles from "./Footer.module.scss";
 export default function Footer() {
   return (
@@ -17,9 +17,20 @@ export default function Footer() {
             <button>Contact us</button>
           </div>
           <div className={styles.content_links}>
-            <a href="#">NFT Ownership License button</a>
-            <a href="#">Terms of Conditions</a>
-            <a href="#">Opensea</a>
+            <a href="*">NFT Ownership License button</a>
+            <a href="*">Terms of Conditions</a>
+            <a href="*">Opensea</a>
+          </div>
+          <div className={styles.content_social}>
+            <a href="*">
+              <img src={twitter} alt="twitter" />
+            </a>
+            <a href="*">
+              <img src={discord} alt="discord" />
+            </a>
+            <a href="*">
+              <img src={medium} alt="medium" />
+            </a>
           </div>
         </div>
       </div>
