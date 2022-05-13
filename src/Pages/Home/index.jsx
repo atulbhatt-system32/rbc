@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./Home.module.scss";
 import { banner } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
-import { footer } from "../../Assets/images";
+// import { footer } from "../../Assets/images";
 import Footer from "../../Components/Footer";
-
+import Navbar from "../../Components/Navbar";
 export default function Home() {
   return (
     <div className={styles.home}>
+      <Navbar />
       <section className={styles.landing_section}>
         <div className={styles.banner}>
           <img src={banner} alt="banner" />
