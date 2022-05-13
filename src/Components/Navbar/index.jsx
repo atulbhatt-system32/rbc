@@ -5,13 +5,15 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.nav_left}>
-        <span>Roadmap</span>
-        <span>Mission</span>
-        <span>Team</span>
+        <a href="*">Roadmap</a>
+        <a href="*">Mission</a>
+        <a href="*">Team</a>
       </div>
       <div className={styles.nav_right}>
-        <button>Mint</button>
-        <div className={styles.content_social}>
+        <div className={styles.mint_btn_wrap}>
+          <button>Mint</button>
+        </div>
+        <div className={styles.social_links}>
           <a href="*">
             <img src={twitter} alt="twitter" />
           </a>

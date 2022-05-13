@@ -1,3 +1,50 @@
 .navbar {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar .nav_left a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+.navbar .nav_left a:not(:last-child) {
+  padding-right: 22px;
+}
+.navbar .nav_right {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+.navbar .nav_right .mint_btn_wrap button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  background-color: #000;
+  padding: 16px 36px;
+  border-radius: 100px;
+  border: none;
+}
+.navbar .nav_right .social_links {
+  display: flex;
+  gap: 15px;
+}
+.navbar .nav_right .social_links a {
+  background: rgba(0, 0, 0, 0.09);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 50%;
+}
+.navbar .nav_right .social_links a img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=Navbar.module.css.map */
