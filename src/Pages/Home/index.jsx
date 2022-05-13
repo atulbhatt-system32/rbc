@@ -6,6 +6,7 @@ import {
   girl2,
   arrowDown,
   circleLine,
+  owner,
 } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
 import Footer from "../../Components/Footer";
@@ -113,26 +114,51 @@ export default function Home() {
               </span>
             </div>
           </div>
-
           <div className={styles.mission_people}>
-            {role_people.map((item) => {
-              return (
-                <div className={styles.people_box}>
-                  <div className={styles.people_img}>
-                    <img src={item.profile} alt="owner" />
+            <div className={styles.mission_owner}>
+              <div className={styles.owner_box}>
+                <div className={styles.owner_img}>
+                  <img src={owner} alt="owner" />
+                </div>
+                <div className={styles.owner_details}>
+                  <div className={styles.owner_role}>owner</div>
+                  <div className={styles.owner_name}>
+                    <span>Name Surname</span>
                   </div>
-                  <div className={styles.people_details} key={item.id}>
-                    <div className={styles.people_role}>{item.role}</div>
-                    <div className={styles.people_name}>
-                      <span>{item.name}</span>
-                    </div>
-                    <div className={styles.people_desc}>
-                      <span>{item.desc}</span>
-                    </div>
+                  <div className={styles.owner_desc}>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged.
+                    </p>
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            </div>
+            <div className={styles.mission_other}>
+              {role_people.map((item) => {
+                return (
+                  <div className={styles.people_box}>
+                    <div className={styles.people_img}>
+                      <img src={item.profile} alt="owner" />
+                    </div>
+                    <div className={styles.people_details} key={item.id}>
+                      <div className={styles.people_role}>{item.role}</div>
+                      <div className={styles.people_name}>
+                        <span>{item.name}</span>
+                      </div>
+                      <div className={styles.people_desc}>
+                        <span>{item.desc}</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

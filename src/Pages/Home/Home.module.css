@@ -58,14 +58,16 @@
   font-weight: 500;
   line-height: 49px;
   letter-spacing: 0em;
+  font-style: normal;
 }
 .home section.roadmap .roadmap_header .roadmap_subtitle {
   color: #000000;
-  font-family: Inter;
+  font-family: "Inter";
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   max-width: 70%;
+  font-style: normal;
 }
 .home section.roadmap .roadmap_content_line {
   display: flex;
@@ -131,6 +133,8 @@
   color: #333333;
 }
 .home section.mission .mission_wrapper .mission_people {
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 4rem 1.5rem;
   width: 100%;
@@ -138,41 +142,82 @@
 .home section.mission .mission_wrapper .mission_people .people_box + .people_box {
   margin-top: 3rem;
 }
-.home section.mission .mission_wrapper .mission_people .people_box {
+.home section.mission .mission_wrapper .mission_people .mission_owner {
+  padding-bottom: 2rem;
+}
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_img {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img {
   height: 50%;
   width: 50%;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_img img {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_details div + div {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details div + div {
   margin-top: 0.5rem;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_details {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details {
   color: #333333;
   font-family: Lato;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_role {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_role {
   font-size: 14px;
   color: rgba(51, 51, 51, 0.6);
   font-weight: 400;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_name {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_name {
   font-size: 22px;
   font-weight: 700;
 }
-.home section.mission .mission_wrapper .mission_people .people_box .people_details .people_desc {
+.home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_desc {
+  padding: 0 0.5rem;
+  font-weight: 500;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details div + div {
+  margin-top: 0.5rem;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details {
+  color: #333333;
+  font-family: Lato;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_role {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: 400;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_name {
+  font-size: 22px;
+  font-weight: 700;
+}
+.home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_desc {
   padding: 0 0.5rem;
   font-weight: 500;
 }
@@ -208,22 +253,50 @@
 .home section.roadmap {
     padding: 5% 15%;
   }
+  .home section.roadmap .arrow_img {
+    top: -2%;
+    left: 48.14%;
+  }
   .home .content .intro_wrapper .intro_text {
     font-size: 1rem;
   }
   .home section.roadmap .roadmap_wrapper {
     width: 60%;
   }
-  .home section.roadmap .roadmap_wrapper .roadmap_content .content_box {
+  .home section.roadmap .roadmap_wrapper .roadmap_header {
+    padding-left: 46px;
+  }
+  .home section.roadmap .roadmap_wrapper .roadmap_header .roadmap_title {
+    font-size: 44px;
+    line-height: 56px;
+    padding-bottom: 8px;
+  }
+  .home section.roadmap .roadmap_wrapper .roadmap_header .roadmap_subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: none;
+  }
+  .home section.roadmap .roadmap_wrapper .roadmap_content_line .roadmap_content .content_box {
     padding-left: 0;
   }
   .home section.mission .mission_wrapper .mission_header {
     padding: 5% 15%;
   }
-  .home section.mission .mission_wrapper .mission_people {
+  .home section.mission .mission_wrapper .mission_people .mission_owner {
     padding: 5% 15%;
   }
-  .home section.mission .mission_wrapper .mission_people .people_box .people_img img {
+  .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .home section.mission .mission_wrapper .mission_people .mission_other {
+    padding: 5% 15%;
+    display: flex;
+  }
+  .home section.mission .mission_wrapper .mission_people .mission_other .people_box {
+    flex-direction: row;
+  }
+  .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img img {
     width: 10rem;
     height: 10rem;
   }
