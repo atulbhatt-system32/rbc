@@ -269,7 +269,7 @@
 }
 
 .question {
-  border-top: 1px solid #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 52px 16px 30px 16px;
   .question_wrap {
     display: flex;
@@ -295,6 +295,7 @@
       padding-bottom: 7px;
       text-align: left;
     }
+    // FAQ
     .question_box {
       display: flex;
       flex-direction: column;
@@ -304,7 +305,7 @@
         justify-content: space-between;
         padding: 22px 0;
         &:not(:last-child) {
-          border-bottom: 1px solid #000;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
         p {
           text-align: left;
@@ -465,6 +466,28 @@
       }
       .desktop {
         display: unset;
+      }
+    }
+  }
+}
+
+// FAQ:
+.question {
+  .question_wrap {
+    .question_box {
+      .asked_question {
+        .question_one {
+          max-width: none;
+        }
+        .question_two {
+          max-width: none;
+        }
+        .question_three {
+          max-width: 440px;
+        }
+        .question_four {
+          max-width: none;
+        }
       }
     }
   }

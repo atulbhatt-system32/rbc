@@ -255,7 +255,7 @@
 }
 
 .question {
-  border-top: 1px solid #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 52px 16px 30px 16px;
 }
 .question .question_wrap {
@@ -294,7 +294,7 @@
   padding: 22px 0;
 }
 .question .question_wrap .question_box .asked_question:not(:last-child) {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .question .question_wrap .question_box .asked_question p {
   text-align: left;
@@ -421,4 +421,16 @@
   .home section.carousel .desktop {
     display: unset;
   }
+}
+.question .question_wrap .question_box .asked_question .question_one {
+  max-width: none;
+}
+.question .question_wrap .question_box .asked_question .question_two {
+  max-width: none;
+}
+.question .question_wrap .question_box .asked_question .question_three {
+  max-width: 440px;
+}
+.question .question_wrap .question_box .asked_question .question_four {
+  max-width: none;
 }/*# sourceMappingURL=Home.module.css.map */
