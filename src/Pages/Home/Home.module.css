@@ -214,7 +214,6 @@
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details {
   color: #333333;
   font-family: "Lato";
-  text-align: left;
 }
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_role {
   font-size: 14px;
@@ -253,6 +252,70 @@
      object-fit: cover;
   min-height: 40vh;
   max-height: 40vh;
+}
+
+.question {
+  border-top: 1px solid #000;
+  padding: 52px 16px 30px 16px;
+}
+.question .question_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.question .question_wrap .question_head {
+  text-transform: uppercase;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 49px;
+  color: #000;
+  text-align: left;
+}
+.question .question_wrap .question_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #333;
+  padding-bottom: 7px;
+  text-align: left;
+}
+.question .question_wrap .question_box {
+  display: flex;
+  flex-direction: column;
+}
+.question .question_wrap .question_box .asked_question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 22px 0;
+}
+.question .question_wrap .question_box .asked_question:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+.question .question_wrap .question_box .asked_question p {
+  text-align: left;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+.question .question_wrap .question_box .asked_question .question_one {
+  max-width: 100px;
+}
+.question .question_wrap .question_box .asked_question .question_two {
+  max-width: 210px;
+}
+.question .question_wrap .question_box .asked_question .question_three {
+  max-width: 230px;
+}
+.question .question_wrap .question_box .asked_question .question_four {
+  max-width: 140px;
 }
 
 @media screen and (min-width: 768px) {
@@ -350,6 +413,7 @@
   }
   .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details {
     max-width: 280px;
+    text-align: left;
   }
   .home section.carousel .mobile {
     display: none;

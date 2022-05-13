@@ -7,6 +7,7 @@ import {
   arrowDown,
   circleLine,
   owner,
+  plus,
 } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
 import Footer from "../../Components/Footer";
@@ -250,7 +251,44 @@ export default function Home() {
           </CarouselProvider>
         </div>
       </section>
-
+      <section className={styles.question}>
+        <div className={styles.question_wrap}>
+          <div className={styles.question_head}>
+            <span>faq</span>
+          </div>
+          <div className={styles.question_text}>
+            <p>
+              After collaborating with major Hip Hop and Rap celebrities,
+              Rhabbitz is joining forces with entrepreneurs,
+            </p>
+          </div>
+          <div className={styles.question_box}>
+            <div className={styles.asked_question}>
+              <p className={styles.question_one}>Why should I get feedback?</p>
+              <img src={plus} alt="plus" />
+            </div>
+            <div className={styles.asked_question}>
+              <p className={styles.question_two}>
+                My script doesn’t fit your packages. What should I do?
+              </p>
+              <img src={plus} alt="plus" />
+            </div>
+            <div className={styles.asked_question}>
+              <p className={styles.question_three}>
+                I work as part of a production company and I’d like your help.
+                Is this something you can offer?
+              </p>
+              <img src={plus} alt="plus" />
+            </div>
+            <div className={styles.asked_question}>
+              <p className={styles.question_four}>
+                Do you offer one-off script notes?
+              </p>
+              <img src={plus} alt="plus" />
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
     </div>
   );

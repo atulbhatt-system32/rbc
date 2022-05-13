@@ -9,6 +9,7 @@ import girl2 from "./girl2.png";
 import lines from "./lines.svg";
 import arrowDown from "./arrowDown.svg";
 import circleLine from "./circleLine.svg";
+import plus from "./plus.svg";
 export {
   banner,
   discord,
@@ -21,4 +22,5 @@ export {
   lines,
   arrowDown,
   circleLine,
+  plus,
 };
