@@ -18,11 +18,10 @@
     }
   }
   .content {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem 4rem 1.5rem;
     .intro_wrapper {
       color: #333;
       font-family: "Lato", sans-serif;
-      padding: 0.5rem;
 
       .intro_text {
         font-size: 14px;
@@ -40,7 +39,7 @@
     display: flex;
     text-align: left;
     background: #fbe2e2;
-    padding: 4rem 1.5rem;
+    padding: 4rem 1rem 4rem 0.5rem;
     width: 100%;
     position: relative;
     .arrow_img {
@@ -49,9 +48,10 @@
       left: 44.44%;
     }
     .roadmap_header {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding-left: 12px;
       .roadmap_title {
-        font-family: Lora;
+        font-family: "Lora";
         font-size: 38px;
         font-weight: 500;
         line-height: 49px;
@@ -63,30 +63,42 @@
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;
-        max-width: 60%;
+        max-width: 70%;
       }
     }
     .roadmap_content_line {
       display: flex;
+      .line_img {
+        width: 9%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
       .roadmap_content {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
         .content_box + .content_box {
           margin-top: 1.5rem;
         }
         .content_box {
           font-family: Inter;
           font-size: 14px;
-          line-height: 17px;
-          color: #333333;
+          color: #333;
           padding-left: 1rem;
           width: 100%;
 
           .content_box_title {
             font-weight: 600;
             margin-bottom: 0.5rem;
+            line-height: 17px;
           }
           .content_box_text {
             font-weight: 400;
+            line-height: 23px;
           }
         }
       }

@@ -20,12 +20,11 @@
   max-width: 100%;
 }
 .home .content {
-  padding: 1.5rem;
+  padding: 2rem 1.5rem 4rem 1.5rem;
 }
 .home .content .intro_wrapper {
   color: #333;
   font-family: "Lato", sans-serif;
-  padding: 0.5rem;
 }
 .home .content .intro_wrapper .intro_text {
   font-size: 14px;
@@ -40,7 +39,7 @@
   display: flex;
   text-align: left;
   background: #fbe2e2;
-  padding: 4rem 1.5rem;
+  padding: 4rem 1rem 4rem 0.5rem;
   width: 100%;
   position: relative;
 }
@@ -50,10 +49,11 @@
   left: 44.44%;
 }
 .home section.roadmap .roadmap_header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-left: 12px;
 }
 .home section.roadmap .roadmap_header .roadmap_title {
-  font-family: Lora;
+  font-family: "Lora";
   font-size: 38px;
   font-weight: 500;
   line-height: 49px;
@@ -65,13 +65,25 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  max-width: 60%;
+  max-width: 70%;
 }
 .home section.roadmap .roadmap_content_line {
   display: flex;
 }
+.home section.roadmap .roadmap_content_line .line_img {
+  width: 9%;
+}
+.home section.roadmap .roadmap_content_line .line_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .home section.roadmap .roadmap_content_line .roadmap_content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .home section.roadmap .roadmap_content_line .roadmap_content .content_box + .content_box {
   margin-top: 1.5rem;
@@ -79,17 +91,18 @@
 .home section.roadmap .roadmap_content_line .roadmap_content .content_box {
   font-family: Inter;
   font-size: 14px;
-  line-height: 17px;
-  color: #333333;
+  color: #333;
   padding-left: 1rem;
   width: 100%;
 }
 .home section.roadmap .roadmap_content_line .roadmap_content .content_box .content_box_title {
   font-weight: 600;
   margin-bottom: 0.5rem;
+  line-height: 17px;
 }
 .home section.roadmap .roadmap_content_line .roadmap_content .content_box .content_box_text {
   font-weight: 400;
+  line-height: 23px;
 }
 .home section.mission {
   text-align: center;
