@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { banner, girl1, girl2, arrowDown } from "../../Assets/images";
+import {
+  banner,
+  girl1,
+  girl2,
+  arrowDown,
+  circleLine,
+} from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
@@ -68,19 +74,24 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className={styles.roadmap_content}>
-            {roadmap.map((item) => {
-              return (
-                <div className={styles.content_box} key={item.id}>
-                  <div className={styles.content_box_title}>
-                    <span>{item.title}</span>
+          <div className={styles.roadmap_content_line}>
+            <div className={styles.line_img}>
+              <img src={circleLine} alt="line" />
+            </div>
+            <div className={styles.roadmap_content}>
+              {roadmap.map((item) => {
+                return (
+                  <div className={styles.content_box} key={item.id}>
+                    <div className={styles.content_box_title}>
+                      <span>{item.title}</span>
+                    </div>
+                    <div className={styles.content_box_text}>
+                      <span>{item.text}</span>
+                    </div>
                   </div>
-                  <div className={styles.content_box_text}>
-                    <span>{item.text}</span>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>

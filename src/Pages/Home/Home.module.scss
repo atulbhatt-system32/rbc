@@ -20,14 +20,15 @@
   .content {
     padding: 1.5rem;
     .intro_wrapper {
-      color: #333333;
-      font-family: Lato;
+      color: #333;
+      font-family: "Lato", sans-serif;
       padding: 0.5rem;
 
       .intro_text {
         font-size: 14px;
         font-weight: 400;
         line-height: 27px;
+        text-align: center;
       }
       .intro_text p + p {
         margin-top: 1rem;
@@ -65,25 +66,28 @@
         max-width: 60%;
       }
     }
-    .roadmap_content {
-      width: 100%;
-      .content_box + .content_box {
-        margin-top: 1.5rem;
-      }
-      .content_box {
-        font-family: Inter;
-        font-size: 14px;
-        line-height: 17px;
-        color: #333333;
-        padding-left: 1rem;
+    .roadmap_content_line {
+      display: flex;
+      .roadmap_content {
         width: 100%;
-
-        .content_box_title {
-          font-weight: 600;
-          margin-bottom: 0.5rem;
+        .content_box + .content_box {
+          margin-top: 1.5rem;
         }
-        .content_box_text {
-          font-weight: 400;
+        .content_box {
+          font-family: Inter;
+          font-size: 14px;
+          line-height: 17px;
+          color: #333333;
+          padding-left: 1rem;
+          width: 100%;
+
+          .content_box_title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+          .content_box_text {
+            font-weight: 400;
+          }
         }
       }
     }

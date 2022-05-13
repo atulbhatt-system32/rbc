@@ -23,14 +23,15 @@
   padding: 1.5rem;
 }
 .home .content .intro_wrapper {
-  color: #333333;
-  font-family: Lato;
+  color: #333;
+  font-family: "Lato", sans-serif;
   padding: 0.5rem;
 }
 .home .content .intro_wrapper .intro_text {
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
+  text-align: center;
 }
 .home .content .intro_wrapper .intro_text p + p {
   margin-top: 1rem;
@@ -66,13 +67,16 @@
   line-height: 18px;
   max-width: 60%;
 }
-.home section.roadmap .roadmap_content {
+.home section.roadmap .roadmap_content_line {
+  display: flex;
+}
+.home section.roadmap .roadmap_content_line .roadmap_content {
   width: 100%;
 }
-.home section.roadmap .roadmap_content .content_box + .content_box {
+.home section.roadmap .roadmap_content_line .roadmap_content .content_box + .content_box {
   margin-top: 1.5rem;
 }
-.home section.roadmap .roadmap_content .content_box {
+.home section.roadmap .roadmap_content_line .roadmap_content .content_box {
   font-family: Inter;
   font-size: 14px;
   line-height: 17px;
@@ -80,11 +84,11 @@
   padding-left: 1rem;
   width: 100%;
 }
-.home section.roadmap .roadmap_content .content_box .content_box_title {
+.home section.roadmap .roadmap_content_line .roadmap_content .content_box .content_box_title {
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-.home section.roadmap .roadmap_content .content_box .content_box_text {
+.home section.roadmap .roadmap_content_line .roadmap_content .content_box .content_box_text {
   font-weight: 400;
 }
 .home section.mission {
