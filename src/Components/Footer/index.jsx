@@ -13,7 +13,9 @@ export default function Footer() {
             <span>Rubensian Beauties Club</span>
           </div>
           <div className={styles.content_btns}>
-            <button>Mint</button>
+            <button onClick={() => (window.location.hash = "/mint")}>
+              Mint
+            </button>
             <button>Contact us</button>
           </div>
           <div className={styles.content_links}>

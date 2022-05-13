@@ -158,6 +158,31 @@
       }
     }
   }
+
+  section.carousel {
+    width: 100%;
+
+    .desktop {
+      display: none;
+    }
+
+    .carousel_wrapper {
+      padding: 4rem 0;
+      // display: flex;
+      // justify-content: center;
+      .carousel_box {
+        width: 100%;
+
+        img {
+          padding: 0 0.2rem;
+          max-width: 100%;
+          object-fit: cover;
+          min-height: 40vh;
+          max-height: 40vh;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -211,6 +236,15 @@
             }
           }
         }
+      }
+    }
+
+    section.carousel {
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: unset;
       }
     }
   }
