@@ -1,9 +1,15 @@
 .navbar {
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  z-index: 99;
+  top: 20px;
+  left: 0;
+  // padding-top: 20px;
   .nav_left {
+    padding-left: 10rem;
     a {
       font-weight: 600;
       font-size: 14px;
@@ -17,6 +23,7 @@
     }
   }
   .nav_right {
+    padding-right: 10rem;
     display: flex;
     align-items: center;
     gap: 29px;
@@ -40,7 +47,7 @@
       a {
         background: rgba(0, 0, 0, 0.09);
         backdrop-filter: blur(4px);
-        border-radius: 50%;
+        border-radius: 100%;
         img {
           height: 100%;
           width: 100%;

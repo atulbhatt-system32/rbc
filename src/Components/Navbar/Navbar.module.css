@@ -1,8 +1,15 @@
 .navbar {
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  z-index: 99;
+  top: 20px;
+  left: 0;
+}
+.navbar .nav_left {
+  padding-left: 10rem;
 }
 .navbar .nav_left a {
   font-weight: 600;
@@ -16,6 +23,7 @@
   padding-right: 22px;
 }
 .navbar .nav_right {
+  padding-right: 10rem;
   display: flex;
   align-items: center;
   gap: 29px;
@@ -40,7 +48,7 @@
   background: rgba(0, 0, 0, 0.09);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
-  border-radius: 50%;
+  border-radius: 100%;
 }
 .navbar .nav_right .social_links a img {
   height: 100%;
