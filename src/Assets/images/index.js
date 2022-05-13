@@ -7,4 +7,16 @@ import footer from "./footer.svg";
 import girl1 from "./girl1.png";
 import girl2 from "./girl2.png";
 import lines from "./lines.svg";
-export { banner, discord, medium, owner, twitter, footer, girl1, girl2, lines };
+import arrowDown from "./arrowDown.svg";
+export {
+  banner,
+  discord,
+  medium,
+  owner,
+  twitter,
+  footer,
+  girl1,
+  girl2,
+  lines,
+  arrowDown,
+};

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import { banner, girl1, girl2 } from "../../Assets/images";
+import { banner, girl1, girl2, arrowDown } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
@@ -53,6 +53,9 @@ export default function Home() {
         </div>
       </div>
       <section className={styles.roadmap}>
+        <div className={styles.arrow_img}>
+          <img src={arrowDown} alt="down-arrow" />
+        </div>
         <div className={styles.roadmap_wrapper}>
           <div className={styles.roadmap_header}>
             <div className={styles.roadmap_title}>

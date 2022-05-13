@@ -41,6 +41,12 @@
     background: #fbe2e2;
     padding: 4rem 1.5rem;
     width: 100%;
+    position: relative;
+    .arrow_img {
+      position: absolute;
+      top: -3.8%;
+      left: 44.44%;
+    }
     .roadmap_header {
       margin-bottom: 1rem;
       .roadmap_title {

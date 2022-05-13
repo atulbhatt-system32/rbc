@@ -41,6 +41,12 @@
   background: #fbe2e2;
   padding: 4rem 1.5rem;
   width: 100%;
+  position: relative;
+}
+.home section.roadmap .arrow_img {
+  position: absolute;
+  top: -3.8%;
+  left: 44.44%;
 }
 .home section.roadmap .roadmap_header {
   margin-bottom: 1rem;
@@ -153,6 +159,26 @@
   padding: 0 0.5rem;
   font-weight: 500;
 }
+.home section.carousel {
+  width: 100%;
+}
+.home section.carousel .desktop {
+  display: none;
+}
+.home section.carousel .carousel_wrapper {
+  padding: 4rem 0;
+}
+.home section.carousel .carousel_wrapper .carousel_box {
+  width: 100%;
+}
+.home section.carousel .carousel_wrapper .carousel_box img {
+  padding: 0 0.2rem;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 40vh;
+  max-height: 40vh;
+}
 
 @media screen and (min-width: 768px) {
   .home .landing_section {
@@ -183,5 +209,11 @@
   .home section.mission .mission_wrapper .mission_people .people_box .people_img img {
     width: 10rem;
     height: 10rem;
+  }
+  .home section.carousel .mobile {
+    display: none;
+  }
+  .home section.carousel .desktop {
+    display: unset;
   }
 }/*# sourceMappingURL=Home.module.css.map */
