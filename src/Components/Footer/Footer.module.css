@@ -1,3 +1,6 @@
+.footer {
+  width: 100%;
+}
 .footer .footer_wrap .footer_img_wrap img {
   height: 100%;
   width: 100%;
@@ -56,6 +59,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer .footer_wrap .footer_img_wrap img {
+    max-height: 4rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .footer .footer_wrap .footer_content_wrap .content_links {
     width: 100%;
     flex-direction: row;
