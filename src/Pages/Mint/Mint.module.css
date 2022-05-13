@@ -2,16 +2,26 @@
   padding: 3.5rem 1rem;
   background-color: #fbe2e2;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
 }
 
 .title_wrapper {
   padding-bottom: 1rem;
 }
+
 .mint_page_title {
   font-size: 38px;
   font-weight: 700;
@@ -20,9 +30,11 @@
   text-align: center;
   line-height: 48.64px;
 }
+
 .subtitle_wrapper {
   padding-bottom: 3.5rem;
 }
+
 .mint_page_subtitle {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
@@ -34,23 +46,53 @@
   font-style: normal;
 }
 
-/* Wallet Card */
+.wallet_modal {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
+.wallet_modal .wallet_card {
+  background-color: #fbe2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.wallet_modal .wallet_card .label {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* Wallet Card */
 .wallet_card_wrapper {
   /* padding: 4rem 2rem; */
   width: 100%;
   padding-bottom: 5.5rem;
 }
+
 .wallet_card {
   border: 0.5rem solid #a385c5;
   padding: 3rem 1rem;
   width: 100%;
   background-color: #fff;
+  min-width: 20rem;
 }
 
 .label_value_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -70,6 +112,7 @@
   font-family: "Lato";
   text-align: left;
 }
+
 .label_value_holder .value_divisor {
   color: #000;
 }
@@ -100,8 +143,11 @@
 }
 
 .social_media_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .social_media_wrapper img {
   padding: 0 0.5rem;
 }
@@ -110,7 +156,6 @@
   .mint_page {
     padding: 50px 294px 50px 294px;
   }
-
   /* .title_wrapper {
     padding-bottom: 0.5rem;
   } */
@@ -153,3 +198,4 @@
     padding-top: 1rem;
   }
 }
+/*# sourceMappingURL=Mint.module.css.map */

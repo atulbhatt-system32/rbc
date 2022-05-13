@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import styles from "./Mint.module.css";
+import styles from "./Mint.module.scss";
 import { Modal } from "react-responsive-modal";
 
 import { discord, medium, twitter } from "../../Assets/images";
 import useMetaMask from "../../Hooks/metamask";
 
 export default function Mint() {
-  const { connect, disconnect, isActive, account, shouldDisable } =
-    useMetaMask();
+  const { connect, disconnect, isActive, account } = useMetaMask();
   const [open, setOpen] = useState(false);
 
   const onOpenModal = () => setOpen(true);
@@ -41,7 +40,12 @@ export default function Mint() {
             <div className={styles.value}>3 SOL</div>
           </div>
           <div className={styles.connect_wallet_btn_wrapper}>
-            <button onClick={onOpenModal}>
+            <button
+              onClick={() => {
+                connect();
+                onOpenModal();
+              }}
+            >
               <span className={styles.connect_wallet_btn_text}>
                 CONNECT WALLET
               </span>
@@ -49,30 +53,22 @@ export default function Mint() {
           </div>
         </div>
       </div>
-      <Modal open={open} onClose={onCloseModal} center>
-        <div className={styles.wallet_card_wrapper}>
-          <div className={styles.wallet_card}>
+      <Modal
+        classNames={{ modal: styles.wallet_modal }}
+        open={open}
+        onClose={onCloseModal}
+        center
+        showCloseIcon={false}
+      >
+        <div className={styles.wallet_card}>
+          {isActive && (
             <div className={styles.label_value_holder}>
-              <span className={styles.label}>Remaining Amount</span>
-              <div className={styles.value}>
-                6238/<span className={styles.value_divisor}>100000</span>
-              </div>
+              <span className={styles.label}>{`wallet: ${account.slice(
+                0,
+                4
+              )}...${account.slice(-2)}`}</span>
             </div>
-            <div className={styles.horizontal_rule_wrapper}>
-              <hr />
-            </div>
-            <div className={styles.label_value_holder}>
-              <span className={styles.label}>Price</span>
-              <div className={styles.value}>3 SOL</div>
-            </div>
-            <div className={styles.connect_wallet_btn_wrapper}>
-              <button onClick={connect}>
-                <span className={styles.connect_wallet_btn_text}>
-                  CONNECT WALLET
-                </span>
-              </button>
-            </div>
-          </div>
+          )}
         </div>
       </Modal>
 
