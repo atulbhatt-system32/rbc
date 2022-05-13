@@ -18,7 +18,9 @@ export default function Navbar() {
         </div>
         <div className={styles.nav_right}>
           <div className={styles.mint_btn_wrap}>
-            <button>Mint</button>
+            <button onClick={() => (window.location.hash = "/mint")}>
+              Mint
+            </button>
           </div>
           <div className={styles.social_links}>
             <a href="*">
