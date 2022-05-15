@@ -76,19 +76,24 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className={styles.roadmap_content_line}>
-            <div className={styles.line_img}>
-              <img src={circleLine} alt="line" />
-            </div>
-            <div className={styles.roadmap_content}>
-              {roadmap.map((item) => {
+          <div className={styles.roadmap_content}>
+            <div className={styles.content_box_wrap}>
+              {roadmap.map((item, index) => {
                 return (
-                  <div className={styles.content_box} key={item.id}>
-                    <div className={styles.content_box_title}>
-                      <span>{item.title}</span>
-                    </div>
-                    <div className={styles.content_box_text}>
-                      <span>{item.text}</span>
+                  <div className={styles.box_circle}>
+                    <div className={styles.circle} num={item.id}></div>
+                    <div
+                      className={`${styles.content_box} ${
+                        index === roadmap.length - 1 && styles.pd_0
+                      } `}
+                      key={item.id}
+                    >
+                      <div className={styles.content_box_title}>
+                        <span>{item.title}</span>
+                      </div>
+                      <div className={styles.content_box_text}>
+                        <span>{item.text}</span>
+                      </div>
                     </div>
                   </div>
                 );

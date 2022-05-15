@@ -39,7 +39,7 @@
     display: flex;
     text-align: left;
     background: #fbe2e2;
-    padding: 4rem 1rem 4rem 0.5rem;
+    padding: 4rem 1rem 4rem 1rem;
     width: 100%;
     position: relative;
     .arrow_img {
@@ -49,7 +49,6 @@
     }
     .roadmap_header {
       margin-bottom: 2rem;
-      padding-left: 12px;
       .roadmap_title {
         font-family: "Lora";
         font-size: 38px;
@@ -68,39 +67,67 @@
         font-style: normal;
       }
     }
-    .roadmap_content_line {
-      display: flex;
-      .line_img {
-        width: 9%;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .roadmap_content {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        .content_box + .content_box {
-          margin-top: 1.5rem;
-        }
-        .content_box {
-          font-family: Inter;
-          font-size: 14px;
-          color: #333;
-          padding-left: 1rem;
-          width: 100%;
 
-          .content_box_title {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            line-height: 17px;
+    .roadmap_content {
+      width: 100%;
+      position: relative;
+      gap: 5px;
+      .content_box + .content_box {
+        margin-top: 1.8rem;
+      }
+
+      .content_box_wrap {
+        .box_circle {
+          position: relative;
+
+          .circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 14px;
+            height: 14px;
+            background-color: #f0aaaa;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -6.5px;
+            border: 2px solid #fff;
           }
-          .content_box_text {
-            font-weight: 400;
-            line-height: 23px;
+          [num="2"] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background-color: #f0aaaa;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            left: -10.5px;
+            border: 5px solid #fff;
+          }
+          .content_box {
+            font-family: Inter;
+            font-size: 14px;
+            color: #333;
+            padding-left: 1.5rem;
+            width: 100%;
+            border-left: 3px solid #f0aaaa;
+            // border: 1px solid #000;
+            padding-bottom: 22px;
+
+            .content_box_title {
+              font-weight: 600;
+              margin-bottom: 0.5rem;
+              line-height: 17px;
+            }
+            .content_box_text {
+              font-weight: 400;
+              line-height: 23px;
+            }
+          }
+          .pd_0 {
+            padding-bottom: 0;
           }
         }
       }
@@ -353,12 +380,7 @@
     section.roadmap {
       padding: 5% 15%;
     }
-    section.roadmap {
-      .arrow_img {
-        top: -2%;
-        left: 48.14%;
-      }
-    }
+
     .content {
       .intro_wrapper {
         .intro_text {
@@ -368,10 +390,17 @@
     }
 
     section.roadmap {
+      padding-bottom: 0;
+      .arrow_img {
+        top: -2%;
+        left: 48.14%;
+      }
       .roadmap_wrapper {
-        width: 60%;
+        width: 65%;
         .roadmap_header {
           padding-left: 46px;
+          margin-bottom: 52px;
+
           .roadmap_title {
             font-size: 44px;
             line-height: 56px;
@@ -384,10 +413,47 @@
           }
         }
 
-        .roadmap_content_line {
-          .roadmap_content {
-            .content_box {
-              padding-left: 0;
+        .roadmap_content {
+          border-left: 3px solid #f0aaaa;
+          padding-bottom: 5rem;
+          gap: 26px;
+          .content_box_wrap {
+            .box_circle {
+              .circle {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 14px;
+                height: 14px;
+                background-color: #f0aaaa;
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: -8.8px;
+                border: 2px solid #fff;
+              }
+              [num="2"] {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                background-color: #f0aaaa;
+                border-radius: 50%;
+                position: absolute;
+                top: -4px;
+                left: -14.8px;
+                border: 5px solid #fff;
+              }
+              .content_box {
+                padding-left: 2rem;
+                max-width: 480px;
+                border: none;
+              }
+
+              .content_box + .content_box {
+                margin-top: 0;
+              }
             }
           }
         }
