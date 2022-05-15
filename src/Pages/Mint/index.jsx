@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./Mint.module.scss";
 import { Modal } from "react-responsive-modal";
 
-import { discord, medium, twitter } from "../../Assets/images";
+import { discord, medium, twitter, rbc } from "../../Assets/images";
 import useMetaMask from "../../Hooks/metamask";
 
 export default function Mint() {
@@ -26,6 +26,9 @@ export default function Mint() {
 
       <div className={styles.wallet_card_wrapper}>
         <div className={styles.wallet_card}>
+          <div className={styles.mint_img}>
+            <img src={rbc} alt="rbc" />
+          </div>
           <div className={styles.label_value_holder}>
             <span className={styles.label}>Remaining Amount</span>
             <div className={styles.value}>

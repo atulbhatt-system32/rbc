@@ -64,6 +64,12 @@
   width: 100%;
   background-color: #fff;
   min-width: 20rem;
+  position: relative;
+  .mint_img {
+    position: absolute;
+    top: -15%;
+    left: 38%;
+  }
 }
 
 .label_value_holder {
@@ -166,6 +172,10 @@
     padding: 3rem 1rem;
     width: 100%;
     background-color: #fff;
+    .mint_img {
+      top: -15%;
+      left: 42%;
+    }
   }
   .social_media_wrapper {
     padding-top: 1rem;

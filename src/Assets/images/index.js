@@ -10,6 +10,7 @@ import lines from "./lines.svg";
 import arrowDown from "./arrowDown.svg";
 import circleLine from "./circleLine.svg";
 import plus from "./plus.svg";
+import rbc from "./rbc.svg";
 export {
   banner,
   discord,
@@ -23,4 +24,5 @@ export {
   arrowDown,
   circleLine,
   plus,
+  rbc,
 };
