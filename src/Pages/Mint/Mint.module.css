@@ -41,9 +41,55 @@
   background: none;
   border: none;
   box-shadow: none;
+  position: absolute;
+  top: 31.5%;
+  left: 0.5%;
+  padding: 0;
+  transition: all 0.2s;
+  transform: scale(1.05);
 }
 .wallet_modal .wallet_card {
-  background-color: #fbe2e2;
+  display: flex;
+  flex-direction: column;
+}
+.wallet_modal .wallet_card .wallet_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem;
+}
+.wallet_modal .wallet_card .wallet_body::after {
+  content: "";
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  width: 100%;
+}
+.wallet_modal .wallet_card .wallet_body .connect_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+.wallet_modal .wallet_card .wallet_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.wallet_modal .wallet_card .wallet_logo .wallet_text span {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: capitalize;
+}
+.wallet_modal .wallet_card {
+  background-color: #fff;
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -190,5 +236,42 @@
 
   .social_media_wrapper {
     padding-top: 1rem;
+  }
+
+  .wallet_modal {
+    background: none;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 32%;
+    left: 37%;
+  }
+  .wallet_modal .wallet_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wallet_modal .wallet_logo .wallet_text span {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: capitalize;
+  }
+  .wallet_modal .wallet_card {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .wallet_modal .wallet_card .wallet_body {
+    padding: 0.5rem;
+  }
+  .wallet_modal .wallet_card .label {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
   }
 }/*# sourceMappingURL=Mint.module.css.map */

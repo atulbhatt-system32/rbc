@@ -11,6 +11,8 @@ import arrowDown from "./arrowDown.svg";
 import circleLine from "./circleLine.svg";
 import plus from "./plus.svg";
 import rbc from "./rbc.svg";
+import fox from "./fox.svg";
+import cross from "./cross.svg";
 export {
   banner,
   discord,
@@ -25,4 +27,6 @@ export {
   circleLine,
   plus,
   rbc,
+  fox,
+  cross,
 };

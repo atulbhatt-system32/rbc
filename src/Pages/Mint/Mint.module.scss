@@ -38,8 +38,57 @@
   background: none;
   border: none;
   box-shadow: none;
+  position: absolute;
+  top: 31.5%;
+  left: 0.5%;
+  padding: 0;
+  transition: all 0.2s;
+  transform: scale(1.05);
   .wallet_card {
-    background-color: #fbe2e2;
+    display: flex;
+    flex-direction: column;
+    .wallet_body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 1rem;
+      &::after {
+        content: "";
+        border: 1px solid rgba(#333, 10%);
+        width: 100%;
+      }
+      .connect_text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+      }
+    }
+    .wallet_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5px;
+      .wallet_text {
+        span {
+          font-family: "Lora";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .wallet_card {
+    background-color: #fff;
     display: flex;
     justify-content: center;
     padding: 1rem;
@@ -179,5 +228,43 @@
   }
   .social_media_wrapper {
     padding-top: 1rem;
+  }
+  .wallet_modal {
+    background: none;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 32%;
+    left: 37%;
+    .wallet_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .wallet_text {
+        span {
+          font-family: "Lora";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .wallet_card {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      .wallet_body {
+        padding: 0.5rem;
+      }
+      .label {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
   }
 }
