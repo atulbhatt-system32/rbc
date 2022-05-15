@@ -45,8 +45,6 @@
   top: 31.5%;
   left: 0.5%;
   padding: 0;
-  transition: all 0.2s;
-  transform: scale(1.05);
 }
 .wallet_modal .wallet_card {
   display: flex;
