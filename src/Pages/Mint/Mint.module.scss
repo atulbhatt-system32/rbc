@@ -34,24 +34,26 @@
   font-style: normal;
 }
 
+// MOBILE (cross)
 .wallet_modal {
-  background: none;
+  background: none !important;
   border: none;
-  box-shadow: none;
+  box-shadow: none !important;
   position: absolute;
-  top: 31.5%;
-  left: 0.5%;
-  padding: 0;
+  top: 35%;
+  left: -5%;
+
   .wallet_card {
     display: flex;
     flex-direction: column;
+    padding: 2rem 1rem 1.5rem 1rem;
     .wallet_body {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 15px;
-      padding: 1rem;
+      padding: 0 1rem;
       &::after {
         content: "";
         border: 1px solid rgba(#333, 10%);
@@ -70,7 +72,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 5px;
+      padding-top: 15px;
       .wallet_text {
         span {
           font-family: "Lora";
@@ -78,66 +80,16 @@
           font-weight: 700;
           font-size: 16px;
           line-height: 20px;
-          color: #000000;
+          color: #000;
           text-transform: capitalize;
         }
       }
     }
   }
-
-  .wallet_card {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    .label {
-      text-align: center;
-      font-family: "Lato", sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-    }
-  }
 }
 
-// wallet_modal_Active
+// MOBILE:(not cross)
 .wallet_modal_active {
-  background: none;
-  border: none;
-  box-shadow: none;
-  position: static;
-  .wallet_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-    .wallet_text {
-      span {
-        font-family: "Lora";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        color: #000000;
-        text-transform: capitalize;
-      }
-    }
-  }
-  .wallet_card {
-    background-color: #fbe2e2;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    .label {
-      text-align: center;
-      font-family: "Lato", sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-    }
-  }
-}
-
-// MOBILE:
-.wallet_modal {
   background: none;
   border: none;
   box-shadow: none;
@@ -303,13 +255,15 @@
   .social_media_wrapper {
     padding-top: 1rem;
   }
+
+  // DESKTOP(not cross):
   .wallet_modal {
     background: none;
     border: none;
     box-shadow: none;
     position: absolute;
-    top: 32%;
-    left: 37%;
+    top: 0;
+    left: 0;
     .wallet_logo {
       display: flex;
       align-items: center;
@@ -326,13 +280,36 @@
         }
       }
     }
+  }
+  .wallet_modal_active {
+    background: none;
+    border: none;
+    box-shadow: none;
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    .wallet_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 1rem;
+      .wallet_text {
+        span {
+          font-family: "Lora";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+    }
     .wallet_card {
+      background-color: #fbe2e2;
       display: flex;
       justify-content: center;
       padding: 1rem;
-      .wallet_body {
-        padding: 0.5rem;
-      }
       .label {
         text-align: center;
         font-family: "Lato", sans-serif;

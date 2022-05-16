@@ -60,7 +60,7 @@ export default function Mint() {
       {!!account ? (
         <Modal
           classNames={{ modal: styles.wallet_modal_active }}
-          open={open}
+          open={false}
           onClose={onCloseModal}
           center
           showCloseIcon={false}
