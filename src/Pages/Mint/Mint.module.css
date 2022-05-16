@@ -47,14 +47,13 @@
 }
 
 .wallet_modal {
-  background: none;
+  background: none !important;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
   position: absolute;
-  top: 31.5%;
-  left: 0.5%;
-  padding: 0;
+  top: 35%;
+  left: -5%;
 }
 
 .wallet_modal .wallet_card {
@@ -65,6 +64,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 2rem 1rem 1.5rem 1rem;
 }
 
 .wallet_modal .wallet_card .wallet_body {
@@ -82,7 +82,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 15px;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .wallet_modal .wallet_card .wallet_body::after {
@@ -110,7 +110,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 .wallet_modal .wallet_card .wallet_logo .wallet_text span {
@@ -119,26 +119,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: #000;
   text-transform: capitalize;
-}
-
-.wallet_modal .wallet_card {
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem;
-}
-
-.wallet_modal .wallet_card .label {
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
 }
 
 .wallet_modal_active {
@@ -146,7 +128,9 @@
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  position: static;
+  position: absolute;
+  top: 36%;
+  left: -18.75px;
 }
 
 .wallet_modal_active .wallet_logo {
@@ -184,57 +168,6 @@
 }
 
 .wallet_modal_active .wallet_card .label {
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.wallet_modal {
-  background: none;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  position: absolute;
-  top: 36%;
-  left: -18.75px;
-}
-
-.wallet_modal .wallet_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 1rem;
-}
-
-.wallet_modal .wallet_logo .wallet_text span {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  text-transform: capitalize;
-}
-
-.wallet_modal .wallet_card {
-  background-color: #fbe2e2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem;
-}
-
-.wallet_modal .wallet_card .label {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -384,8 +317,8 @@
     -webkit-box-shadow: none;
             box-shadow: none;
     position: absolute;
-    top: 32%;
-    left: 37%;
+    top: 0;
+    left: 0;
   }
   .wallet_modal .wallet_logo {
     display: -webkit-box;
@@ -407,7 +340,38 @@
     color: #000000;
     text-transform: capitalize;
   }
-  .wallet_modal .wallet_card {
+  .wallet_modal_active {
+    background: none;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    position: absolute;
+    top: 33%;
+    left: 35%;
+  }
+  .wallet_modal_active .wallet_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .wallet_modal_active .wallet_logo .wallet_text span {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: capitalize;
+  }
+  .wallet_modal_active .wallet_card {
+    background-color: #fbe2e2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -416,10 +380,7 @@
             justify-content: center;
     padding: 1rem;
   }
-  .wallet_modal .wallet_card .wallet_body {
-    padding: 0.5rem;
-  }
-  .wallet_modal .wallet_card .label {
+  .wallet_modal_active .wallet_card .label {
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 700;
