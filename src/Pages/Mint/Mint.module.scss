@@ -98,6 +98,82 @@
     }
   }
 }
+
+// wallet_modal_Active
+.wallet_modal_active {
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: static;
+  .wallet_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    .wallet_text {
+      span {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .wallet_card {
+    background-color: #fbe2e2;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    .label {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+    }
+  }
+}
+
+// MOBILE:
+.wallet_modal {
+  background: none;
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  top: 36%;
+  left: -18.75px;
+  .wallet_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    .wallet_text {
+      span {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .wallet_card {
+    background-color: #fbe2e2;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    .label {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+    }
+  }
+}
 /* Wallet Card */
 
 .wallet_card_wrapper {

@@ -1,17 +1,29 @@
 .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
 }
+
 .home .landing_section {
   width: 100%;
 }
+
 .home .landing_section .banner {
   width: 100%;
 }
+
 .home .landing_section .banner img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -19,23 +31,30 @@
   min-height: 45vh;
   max-width: 100%;
 }
+
 .home .content {
   padding: 2rem 1.5rem 4rem 1.5rem;
 }
+
 .home .content .intro_wrapper {
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .home .content .intro_wrapper .intro_text {
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
   text-align: center;
 }
+
 .home .content .intro_wrapper .intro_text p + p {
   margin-top: 1rem;
 }
+
 .home section.roadmap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
   background: #fbe2e2;
@@ -43,14 +62,17 @@
   width: 100%;
   position: relative;
 }
+
 .home section.roadmap .arrow_img {
   position: absolute;
   top: -3.8%;
   left: 44.44%;
 }
+
 .home section.roadmap .roadmap_header {
   margin-bottom: 2rem;
 }
+
 .home section.roadmap .roadmap_header .roadmap_title {
   font-family: "Lora";
   font-size: 38px;
@@ -59,6 +81,7 @@
   letter-spacing: 0em;
   font-style: normal;
 }
+
 .home section.roadmap .roadmap_header .roadmap_subtitle {
   color: #000000;
   font-family: "Inter";
@@ -68,21 +91,31 @@
   max-width: 70%;
   font-style: normal;
 }
+
 .home section.roadmap .roadmap_content {
   width: 100%;
   position: relative;
   gap: 5px;
 }
+
 .home section.roadmap .roadmap_content .content_box + .content_box {
   margin-top: 1.8rem;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle {
   position: relative;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 14px;
   height: 14px;
   background-color: #f0aaaa;
@@ -92,10 +125,17 @@
   left: -6.5px;
   border: 2px solid #fff;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle [num="2"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 24px;
   height: 24px;
   background-color: #f0aaaa;
@@ -105,6 +145,7 @@
   left: -10.5px;
   border: 5px solid #fff;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle .content_box {
   font-family: Inter;
   font-size: 14px;
@@ -114,30 +155,37 @@
   border-left: 3px solid #f0aaaa;
   padding-bottom: 22px;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle .content_box .content_box_title {
   font-weight: 600;
   margin-bottom: 0.5rem;
   line-height: 17px;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle .content_box .content_box_text {
   font-weight: 400;
   line-height: 23px;
 }
+
 .home section.roadmap .roadmap_content .content_box_wrap .box_circle .pd_0 {
   padding-bottom: 0;
 }
+
 .home section.mission {
   text-align: center;
   width: 100%;
 }
+
 .home section.mission .mission_wrapper {
   width: 100%;
 }
+
 .home section.mission .mission_wrapper .mission_header {
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #00000033;
   padding: 4rem 1.5rem;
 }
+
 .home section.mission .mission_wrapper .mission_header .mission_title {
   font-family: Lora;
   font-size: 38px;
@@ -145,6 +193,7 @@
   line-height: 49px;
   margin-bottom: 1rem;
 }
+
 .home section.mission .mission_wrapper .mission_header .mission_subtitle {
   font-family: Lato;
   font-size: 14px;
@@ -152,25 +201,44 @@
   line-height: 23px;
   color: #333333;
 }
+
 .home section.mission .mission_wrapper .mission_people {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #00000033;
   padding: 4rem 1.5rem;
   width: 100%;
 }
+
 .home section.mission .mission_wrapper .mission_people .people_box + .people_box {
   margin-top: 3rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner {
   padding-bottom: 2rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img {
   height: 50%;
   width: 50%;
@@ -178,26 +246,31 @@
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details div + div {
   margin-top: 0.5rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details {
   color: #333333;
   font-family: Lato;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_role {
   font-size: 14px;
-  color: rgba(51, 51, 51, 0.6);
+  color: #33333399;
   font-weight: 400;
   text-transform: uppercase;
   line-height: 17px;
   font-style: normal;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_name {
   font-size: 22px;
   font-weight: 700;
@@ -205,17 +278,29 @@
   text-transform: capitalize;
   font-style: normal;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_details .owner_desc {
   padding: 0 0.5rem;
   font-weight: 500;
   line-height: 26px;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img {
   height: 50%;
   width: 50%;
@@ -223,25 +308,30 @@
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details div + div {
   margin-top: 0.5rem;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details {
   color: #333333;
   font-family: "Lato";
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_role {
   font-size: 14px;
-  color: rgba(51, 51, 51, 0.6);
+  color: #33333399;
   font-weight: 400;
   line-height: 17px;
   font-style: normal;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_name {
   font-size: 22px;
   font-weight: 700;
@@ -249,22 +339,28 @@
   text-transform: capitalize;
   color: #333;
 }
+
 .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_details .people_desc {
   font-weight: 500;
   line-height: 26px;
 }
+
 .home section.carousel {
   width: 100%;
 }
+
 .home section.carousel .desktop {
   display: none;
 }
+
 .home section.carousel .carousel_wrapper {
   padding: 4rem 0;
 }
+
 .home section.carousel .carousel_wrapper .carousel_box {
   width: 100%;
 }
+
 .home section.carousel .carousel_wrapper .carousel_box img {
   padding: 0 0.2rem;
   max-width: 100%;
@@ -278,11 +374,18 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 52px 16px 30px 16px;
 }
+
 .question .question_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
 }
+
 .question .question_wrap .question_head {
   text-transform: uppercase;
   font-family: "Lora";
@@ -293,6 +396,7 @@
   color: #000;
   text-align: left;
 }
+
 .question .question_wrap .question_text {
   font-family: "Lato";
   font-style: normal;
@@ -303,19 +407,35 @@
   padding-bottom: 7px;
   text-align: left;
 }
+
 .question .question_wrap .question_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .question .question_wrap .question_box .asked_question {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 22px 0;
 }
+
 .question .question_wrap .question_box .asked_question:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .question .question_wrap .question_box .asked_question p {
   text-align: left;
   font-family: "Lato";
@@ -325,15 +445,19 @@
   line-height: 19px;
   color: #333333;
 }
+
 .question .question_wrap .question_box .asked_question .question_one {
   max-width: 100px;
 }
+
 .question .question_wrap .question_box .asked_question .question_two {
   max-width: 210px;
 }
+
 .question .question_wrap .question_box .asked_question .question_three {
   max-width: 230px;
 }
+
 .question .question_wrap .question_box .asked_question .question_four {
   max-width: 140px;
 }
@@ -346,7 +470,7 @@
     min-height: unset;
   }
   .home .content,
-.home section.roadmap {
+  .home section.roadmap {
     padding: 5% 15%;
   }
   .home .content .intro_wrapper .intro_text {
@@ -382,9 +506,15 @@
     gap: 26px;
   }
   .home section.roadmap .roadmap_wrapper .roadmap_content .content_box_wrap .box_circle .circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 14px;
     height: 14px;
     background-color: #f0aaaa;
@@ -395,9 +525,15 @@
     border: 2px solid #fff;
   }
   .home section.roadmap .roadmap_wrapper .roadmap_content .content_box_wrap .box_circle [num="2"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 24px;
     height: 24px;
     background-color: #f0aaaa;
@@ -422,9 +558,16 @@
     padding: 5% 15%;
   }
   .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     gap: 40px;
   }
   .home section.mission .mission_wrapper .mission_people .mission_owner .owner_box .owner_img {
@@ -451,13 +594,20 @@
   }
   .home section.mission .mission_wrapper .mission_people .mission_other {
     padding: 5% 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 80px;
   }
   .home section.mission .mission_wrapper .mission_people .mission_other .people_box {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 20px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin: 0;
   }
   .home section.mission .mission_wrapper .mission_people .mission_other .people_box .people_img {
@@ -482,15 +632,20 @@
     display: unset;
   }
 }
+
 .question .question_wrap .question_box .asked_question .question_one {
   max-width: none;
 }
+
 .question .question_wrap .question_box .asked_question .question_two {
   max-width: none;
 }
+
 .question .question_wrap .question_box .asked_question .question_three {
   max-width: 440px;
 }
+
 .question .question_wrap .question_box .asked_question .question_four {
   max-width: none;
-}/*# sourceMappingURL=Home.module.css.map */
+}
+/*# sourceMappingURL=Home.module.css.map */
