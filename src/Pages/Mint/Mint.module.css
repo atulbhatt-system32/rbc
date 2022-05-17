@@ -51,7 +51,7 @@
   border: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  position: absolute;
+  position: absolute !important;
   top: 35%;
   left: -5%;
 }
@@ -124,11 +124,11 @@
 }
 
 .wallet_modal_active {
-  background: none;
+  background: none !important;
   border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  position: absolute;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  position: absolute !important;
   top: 36%;
   left: -18.75px;
 }
@@ -316,7 +316,7 @@
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
   }
@@ -345,7 +345,7 @@
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
-    position: absolute;
+    position: absolute !important;
     top: 33%;
     left: 35%;
   }

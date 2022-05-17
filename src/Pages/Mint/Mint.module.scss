@@ -39,7 +39,7 @@
   background: none !important;
   border: none;
   box-shadow: none !important;
-  position: absolute;
+  position: absolute !important;
   top: 35%;
   left: -5%;
 
@@ -90,10 +90,10 @@
 
 // MOBILE:(not cross)
 .wallet_modal_active {
-  background: none;
+  background: none !important;
   border: none;
-  box-shadow: none;
-  position: absolute;
+  box-shadow: none !important;
+  position: absolute !important;
   top: 36%;
   left: -18.75px;
   .wallet_logo {
@@ -261,7 +261,7 @@
     background: none;
     border: none;
     box-shadow: none;
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
     .wallet_logo {
@@ -285,7 +285,7 @@
     background: none;
     border: none;
     box-shadow: none;
-    position: absolute;
+    position: absolute !important;
     top: 33%;
     left: 35%;
     .wallet_logo {
