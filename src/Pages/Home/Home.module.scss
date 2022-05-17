@@ -225,15 +225,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 24px;
             .people_img {
-              height: 50%;
-              width: 50%;
-              border-radius: 50%;
-              overflow: hidden;
-              margin-bottom: 1.5rem;
+              height: 40%;
+              width: 40%;
               img {
-                object-fit: cover;
+                object-fit: contain;
                 width: 100%;
+                height: 100%;
               }
             }
 
@@ -463,22 +462,21 @@
           padding: 5% 15%;
         }
         .mission_people {
+          padding: 0 1.5rem 4rem 1.5rem;
           .mission_owner {
             padding: 5% 15%;
             .owner_box {
               display: flex;
               flex-direction: row;
-              align-items: flex-end;
-              gap: 40px;
+              align-items: center;
+              gap: 10px;
               .owner_img {
                 height: 50%;
                 width: 50%;
-                border-radius: 50%;
-                overflow: hidden;
                 img {
-                  width: 65%;
-                  height: 65%;
-                  object-fit: cover;
+                  width: 75%;
+                  height: 75%;
+                  object-fit: contain;
                 }
               }
               .owner_details {
@@ -507,9 +505,10 @@
               align-items: flex-start;
               margin: 0;
               .people_img {
-                margin: 0;
                 width: 75%;
                 height: 75%;
+                border-radius: 50%;
+                overflow: hidden;
                 img {
                   width: 100%;
                   height: 100%;
