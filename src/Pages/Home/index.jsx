@@ -5,7 +5,6 @@ import {
   girl1,
   girl2,
   arrowDown,
-  circleLine,
   owner,
   plus,
 } from "../../Assets/images";

@@ -1,15 +1,15 @@
-import { owner } from "../images";
+import { ceo, developer } from "../images";
 
 const role_people = [
   {
-    profile: owner,
+    profile: ceo,
     role: "CEO",
     name: "Name Surname",
     desc: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",
     id: "1",
   },
   {
-    profile: owner,
+    profile: developer,
     role: "DEVELOPER",
     name: "Name Surname",
     desc: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever",

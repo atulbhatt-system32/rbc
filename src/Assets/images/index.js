@@ -2,7 +2,7 @@ import medium from "./medium.svg";
 import twitter from "./twitter.svg";
 import discord from "./discord.svg";
 import banner from "./banner.svg";
-import owner from "./owner.png";
+import owner from "./owner.svg";
 import footer from "./footer.svg";
 import girl1 from "./girl1.png";
 import girl2 from "./girl2.png";
@@ -13,6 +13,8 @@ import plus from "./plus.svg";
 import rbc from "./rbc.svg";
 import fox from "./fox.svg";
 import cross from "./cross.svg";
+import ceo from "./ceo.svg";
+import developer from "./developer.svg";
 export {
   banner,
   discord,
@@ -29,4 +31,6 @@ export {
   rbc,
   fox,
   cross,
+  ceo,
+  developer,
 };
