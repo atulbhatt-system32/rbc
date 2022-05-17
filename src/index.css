@@ -53,5 +53,5 @@ button {
 }
 
 .react-responsive-modal-overlay {
-  backdrop-filter: blur(24px);
+  backdrop-filter: blur(4px);
 }
