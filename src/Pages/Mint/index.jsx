@@ -86,7 +86,9 @@ export default function Mint() {
         </Modal>
       ) : (
         <Modal
-          classNames={{ modal: styles.wallet_modal }}
+          classNames={{
+            modal: styles.wallet_modal,
+          }}
           open={open}
           onClose={onCloseModal}
           center

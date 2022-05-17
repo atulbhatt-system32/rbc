@@ -51,3 +51,7 @@ button {
   background-color: #102f35;
   border: 1px solid #102f35;
 }
+
+.react-responsive-modal-overlay {
+  backdrop-filter: blur(24px);
+}
