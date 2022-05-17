@@ -9,6 +9,7 @@ import {
   plus,
 } from "../../Assets/images";
 import { roadmap, role_people } from "../../Assets/js";
+import lady from "../../Assets/video/lady.mp4";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
@@ -99,6 +100,15 @@ export default function Home() {
               })}
             </div>
           </div>
+        </div>
+        {/* VIDEO DESKTOP ONLY */}
+        <div className={styles.roadmap_video_desktop}>
+          {/* <video src={lady} autoplay></video> */}
+
+          <video autoPlay muted loop>
+            <source src={lady} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </section>
 
